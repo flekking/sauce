@@ -29,6 +29,13 @@ abstract class WhereExtentBuilder
     private Request $request;
 
     /**
+     * Request usage.
+     * 
+     * @var string
+     */
+    private string $requestUsage = 'query';
+
+    /**
      * Store the data to be converted.
      * 
      * @var array
@@ -121,5 +128,26 @@ abstract class WhereExtentBuilder
     protected function add(...$args)
     {
         foreach ($args as $arg) $this->data[] = $arg;
+    }
+
+    /**
+     * @param  string  $queueIndex
+     * @return bool
+     */
+    protected function valueNotAll(string $queueIndex) : bool
+    {
+        return $this->value($queueIndex, '*') !== '*';
+    }
+
+    /**
+     * Get the value dynamically based on the request usage.
+     * 
+     * @param  string  $queueIndex
+     * @param  mixed  $default
+     * @return mixed
+     */
+    protected function value(string $queueIndex, $default)
+    {
+        return $this->request->{$this->requestUsage}($queueIndex, $default);
     }
 }
