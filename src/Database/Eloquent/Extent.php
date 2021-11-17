@@ -1,6 +1,6 @@
 <?php
 
-namespace Fk\Database\Eloquent;
+namespace Fk\Sauce\Database\Eloquent;
 
 trait Extent
 {
