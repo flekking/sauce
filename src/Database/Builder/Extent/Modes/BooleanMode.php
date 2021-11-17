@@ -13,7 +13,7 @@ trait BooleanMode
         $queueColumn = $this->queueColumn;
         $request = $this->request;
 
-        if ($request->query($queueIndex, '*') !== '*') {
+        if ($this->valueNotAll($queueIndex)) {
             $this->add(
                 $request->boolean($queueIndex)
                     ?   'is'.Str::studly($queueColumn)
