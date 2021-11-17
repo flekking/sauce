@@ -111,4 +111,15 @@ abstract class WhereExtentBuilder
     {
         return $this->toArray();
     }
+
+    /**
+     * Add data dynamically
+     * 
+     * @param  array  ...$args
+     * @return void
+     */
+    protected function add(...$args)
+    {
+        foreach ($args as $arg) $this->data[] = $arg;
+    }
 }
