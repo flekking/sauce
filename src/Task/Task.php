@@ -3,13 +3,14 @@
 namespace Fk\Sauce\Task;
 
 use Fk\Sauce\Database\Traits\{
+    BuildExtent,
     BuildWhere,
     Transaction,
 };
 
 abstract class Task
 {
-    use BuildWhere, Transaction;
+    use BuildExtent, BuildWhere, Transaction;
 
     /**
      * @param  \Illuminate\Http\Request  $request
