@@ -1,6 +1,6 @@
 <?php
 
-namespace Fk\Sauce\Task;
+namespace Fk\Sauce\Widget;
 
 use Fk\Sauce\Database\Traits\{
     BuildExtent,
@@ -8,7 +8,7 @@ use Fk\Sauce\Database\Traits\{
     Transaction,
 };
 
-abstract class Task
+abstract class Widget
 {
     use BuildExtent, BuildWhere, Transaction;
 
@@ -16,5 +16,5 @@ abstract class Task
      * @param  \Illuminate\Http\Request  $request
      * @return mixed
      */
-    abstract public function handle($request);
+    abstract public function touch($request);
 }
