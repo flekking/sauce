@@ -1,6 +1,6 @@
 <?php
 
-namespace Fk\Sauce\Providers;
+namespace Fk\Sauce;
 
 use Illuminate\Support\ServiceProvider;
 
