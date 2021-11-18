@@ -1,6 +1,6 @@
 <?php
 
-namespace Fk\Sauce\Exceptions\Traits;
+namespace Fk\Sauce\Exception\Traits;
 
 use Exception;
 
