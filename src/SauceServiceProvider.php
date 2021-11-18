@@ -26,7 +26,7 @@ class SauceServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/sauce.php' => config_path('flekking/courier.php'),
+            __DIR__.'/../config/sauce.php' => config_path('flekking/sauce.php'),
         ]);
     }
 }
