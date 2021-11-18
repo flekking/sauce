@@ -26,7 +26,9 @@
         "laravel": {
             "providers": [
                 "Barryvdh\\DomPDF\\ServiceProvider",
-                "Fk\\Sauce\\Providers\\ObserverServiceProvider"
+                "Fk\\Sauce\\SauceServiceProvider",
+                "Fk\\Sauce\\Providers\\ObserverServiceProvider",
+                "Fk\\Sauce\\Providers\\EloquentServiceProvider"
             ]
         }
     }
