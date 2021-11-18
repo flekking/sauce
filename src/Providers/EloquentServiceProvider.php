@@ -47,7 +47,7 @@ class EloquentServiceProvider extends ServiceProvider
      */
     private function getEloquentKernels()
     {
-        $kernels = config('sauce.eloquent.kernels');
+        $kernels = config('flekking.sauce.eloquent.kernels');
         if (is_string($kernels)) $kernels = [$kernels];
         $kernels[] = Kernel::class;
 

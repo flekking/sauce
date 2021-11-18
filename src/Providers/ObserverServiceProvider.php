@@ -60,7 +60,7 @@ class ObserverServiceProvider extends ServiceProvider
      */
     private function getObserverKernels()
     {
-        $kernels = config('sauce.observer.kernels');
+        $kernels = config('flekking.sauce.observer.kernels');
         if (is_string($kernels)) $kernels = [$kernels];
         $kernels[] = Kernel::class;
 
