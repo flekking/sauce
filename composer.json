@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Fk\\Sauce\\SauceServiceProvider"
+                "Fk\\Sauce\\Providers\\ObserverServiceProvider"
             ]
         }
     }
