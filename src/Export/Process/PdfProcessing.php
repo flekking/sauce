@@ -2,6 +2,8 @@
 
 namespace Fk\Sauce\Export\Process;
 
+use Barryvdh\DomPDF\Facade as PDF;
+
 trait PdfProcessing
 {
     /**
