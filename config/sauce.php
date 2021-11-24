@@ -2,9 +2,16 @@
 
 return [
     'observer' => [
-        'kernel' => [],
+        'kernels' => [],
     ],
     'eloquent' => [
-        'kernel' => [],
+        'kernels' => [],
+    ],
+    'macro' => [
+        'register' => [
+            'blueprints' => true,
+            'rules' => true,
+        ],
+        'kernels' => [],
     ],
 ];
