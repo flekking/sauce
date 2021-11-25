@@ -2,6 +2,7 @@
 
 namespace Fk\Sauce\Console;
 
+use Illuminate\Console\Command;
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
