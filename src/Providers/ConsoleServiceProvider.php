@@ -4,7 +4,7 @@ namespace Fk\Sauce\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Fk\Sauce\Console\ConsoleException;
-use Fk\Sauce\Foundation\Console\Kernel;
+use Fk\Sauce\Foundation\Console\Kernel as ConsoleKernel;
 
 class ConsoleServiceProvider extends ServiceProvider
 {
