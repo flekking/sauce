@@ -12,6 +12,6 @@ class {{ class }} extends ForeignBlueprint
      */
     protected static $props = [
         'defaultFieldName' => '{{ defaultFieldName }}',
-        'table' => '{{ $table }}'
+        'table' => '{{ table }}'
     ];
 }
