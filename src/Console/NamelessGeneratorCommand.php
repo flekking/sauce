@@ -57,7 +57,7 @@ abstract class NamelessGeneratorCommand extends Command
      */
     public function handle()
     {
-        $name = $this->name;
+        $name = $this->className;
         $path = $this->getPath($name);
 
         // Next, We will check to see if the class already exists. If it does, we don't want
@@ -65,7 +65,7 @@ abstract class NamelessGeneratorCommand extends Command
         // code is untouched. Otherwise, we will continue generating this class' files.
         if ((! $this->hasOption('force') ||
              ! $this->option('force')) &&
-             $this->alreadyExists($this->name)) {
+             $this->alreadyExists($this->className)) {
             $this->error($this->type.' already exists!');
 
             return false;

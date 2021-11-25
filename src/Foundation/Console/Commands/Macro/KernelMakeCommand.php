@@ -32,6 +32,13 @@ class KernelMakeCommand extends NamelessGeneratorCommand
     protected $type = 'Macro Kernel';
 
     /**
+     * The class default name.
+     * 
+     * @var string
+     */
+    protected $className = '\\App\\Macro\\Kernel';
+
+    /**
      * Execute the console command.
      * 
      * @return void
