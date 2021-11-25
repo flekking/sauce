@@ -2,11 +2,11 @@
 
 namespace Fk\Sauce\Foundation\Console\Commands\Macro;
 
+use Fk\Sauce\Console\NamelessGeneratorCommand;
 use Illuminate\Console\Concerns\CreatesMatchingTest;
-use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
 
-class KernelMakeCommand extends GeneratorCommand
+class KernelMakeCommand extends NamelessGeneratorCommand
 {
     use CreatesMatchingTest;
 
