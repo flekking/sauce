@@ -27,6 +27,7 @@
             "providers": [
                 "Barryvdh\\DomPDF\\ServiceProvider",
                 "Fk\\Sauce\\SauceServiceProvider",
+                "Fk\\Sauce\\Providers\\ConsoleServiceProvider",
                 "Fk\\Sauce\\Providers\\ObserverServiceProvider",
                 "Fk\\Sauce\\Providers\\EloquentServiceProvider"
             ]
