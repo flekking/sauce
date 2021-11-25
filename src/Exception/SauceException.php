@@ -12,4 +12,9 @@ use Fk\Sauce\Exception\Traits\{
 class SauceException extends Exception
 {
     use Generate, Problem, Toss;
+
+    /**
+     * @var array
+     */
+    protected $messages = [];
 }
