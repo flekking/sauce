@@ -39,4 +39,26 @@ class ConsoleServiceProvider extends ServiceProvider
             foreach ($kernels as $kernel) $this->commands($kernel::commands());
         }
     }
+
+    /**
+     * @return array
+     */
+    private function getConsoleKernels()
+    {
+        $kernels = config('flekking.sauce.console.kernels');
+        if (is_string($kernels)) $kernels = [$kernels];
+        $kernels[] = Kernel::class;
+
+        foreach ($kernels as $kernel) {
+            if ( ! (new $kernel) instanceof ConsoleKernel) {
+                throw ConsoleException::new()
+                    ->problem('console_kernel_does_not_extend_abstraction', [
+                        'kernel' => $kernel,
+                    ])
+                    ->toss();
+            }
+        }
+
+        return $kernels;
+    }
 }
