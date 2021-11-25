@@ -9,7 +9,7 @@ trait Problem
     /**
      * @param  mixed  $problem
      * @param  array  $replacers
-     * @return void
+     * @return mixed
      */
     public function problem($problem, $replacers = [])
     {
@@ -25,5 +25,7 @@ trait Problem
         }
 
         $this->message = $message;
+
+        return $this;
     }
 }
