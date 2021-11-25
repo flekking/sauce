@@ -1,0 +1,16 @@
+<?php
+
+namespace {{ namespace }};
+
+use Fk\Sauce\Macro\Blueprint\FlagBlueprint;
+use Closure;
+
+class {{ class }} extends FlagBlueprint
+{
+    /**
+     * @var array
+     */
+    protected static $props = [
+        'fieldName' => '{{ fieldName }}'
+    ];
+}

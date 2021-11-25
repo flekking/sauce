@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+use Fk\Sauce\Macro\Blueprint\ForeignBlueprint;
+use Closure;
+
+class {{ class }} extends ForeignBlueprint
+{
+    /**
+     * @var array
+     */
+    protected static $props = [
+        'defaultFieldName' => '{{ defaultFieldName }}',
+        'table' => '{{ $table }}'
+    ];
+}
