@@ -2,7 +2,7 @@
 
 namespace Fk\Sauce\Foundation\Console\Commands\Macro;
 
-use Illuminate\Console\GeneratorCommand;
+use Fk\Sauce\Console\GeneratorCommand;
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 use Symfony\Component\Console\Input\InputOption;
 
