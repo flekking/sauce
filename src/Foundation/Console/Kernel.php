@@ -14,7 +14,7 @@ class Kernel extends ConsoleKernel
     {
         return [
             // Macro
-            \Fk\Sauce\Foundation\Commands\Macro\KernelMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Macro\KernelMakeCommand::class,
         ];
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Fk\Sauce\Foundation\Console\Commands;
+namespace Fk\Sauce\Foundation\Console\Commands\Macro;
 
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 use Illuminate\Console\GeneratorCommand;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Fk\Sauce\Macro;
+namespace Fk\Sauce\Macro\Contracts;
 
 interface Rule
 {
