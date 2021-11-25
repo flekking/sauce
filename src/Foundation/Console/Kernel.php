@@ -16,6 +16,8 @@ class Kernel extends ConsoleKernel
             // Macro
             \Fk\Sauce\Foundation\Console\Commands\Macro\KernelMakeCommand::class,
             \Fk\Sauce\Foundation\Console\Commands\Macro\BlueprintMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Macro\FlagBlueprintMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Macro\ForeignBlueprintMakeCommand::class,
         ];
     }
 }
