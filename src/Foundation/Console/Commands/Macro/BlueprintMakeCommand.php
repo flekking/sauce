@@ -15,21 +15,21 @@ class BlueprintMakeCommand extends GeneratorCommand
      * 
      * @var string
      */
-    protected $name = 'sauce:make:macro_blueprint';
+    protected $name = 'sauce:make:macro:blueprint';
 
     /**
      * The console command description.
      * 
      * @var string
      */
-    protected $description = 'Make Macro Blueprint';
+    protected $description = 'Make Blueprint Macro';
 
     /**
      * The type of class being generated.
      *
      * @var string
      */
-    protected $type = 'Macro Blueprint';
+    protected $type = 'Blueprint Macro';
 
     /**
      * Execute the console command.

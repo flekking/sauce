@@ -15,7 +15,7 @@ class KernelMakeCommand extends NamelessGeneratorCommand
      * 
      * @var string
      */
-    protected $signature = 'sauce:make:macro_kernel';
+    protected $signature = 'sauce:make:macro:kernel';
 
     /**
      * The console command description.
