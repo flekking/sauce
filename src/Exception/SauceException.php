@@ -17,7 +17,7 @@ class SauceException extends Exception
      */
     public static function new() : Exception
     {
-        return new self;
+        return new static;
     }
 
     /**
