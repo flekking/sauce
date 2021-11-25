@@ -12,11 +12,6 @@ use Fk\Sauce\Exception\Traits\{
 class SauceException extends Exception
 {
     /**
-     * @var array
-     */
-    protected $messages = [];
-
-    /**
      * @static
      * @return  \Exception
      */
