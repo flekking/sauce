@@ -8,5 +8,5 @@ abstract class Kernel
      * @static
      * @return array
      */
-    abstract public function commands() : array;
+    abstract public static function commands() : array;
 }

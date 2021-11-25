@@ -10,7 +10,7 @@ class Kernel extends ConsoleKernel
      * @static
      * @return array
      */
-    public function commands() : array
+    public static function commands() : array
     {
         return [
             // Macro
