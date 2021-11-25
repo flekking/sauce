@@ -12,6 +12,6 @@ trait Generate
      */
     public static function new() : Exception
     {
-        return new self;
+        return new static;
     }
 }
