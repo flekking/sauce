@@ -3,6 +3,7 @@
 namespace Fk\Sauce\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Fk\Sauce\Foundation\Console\Kernel;
 
 class ConsoleServiceProvider extends ServiceProvider
 {
