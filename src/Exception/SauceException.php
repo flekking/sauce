@@ -11,5 +11,5 @@ use Fk\Sauce\Exception\Traits\{
 
 class SauceException extends Exception
 {
-    use Generate, Problem, Test;
+    use Generate, Problem, Toss;
 }
