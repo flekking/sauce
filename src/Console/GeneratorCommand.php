@@ -20,7 +20,7 @@ abstract class GeneratorCommand extends Command
         $stub = $this->files->get($this->getStub());
 
         return $this
-            ->replaceContent($stub)
+            ->replaceContent($stub, $name)
             ->replaceNamespace($stub, $name)
             ->replaceClass($stub, $name);
     }
@@ -32,7 +32,7 @@ abstract class GeneratorCommand extends Command
      * @param  string  $name
      * @return \Fk\Sauce\Console\GeneratorCommand
      */
-    protected function replaceContent(&$stub)
+    protected function replaceContent(&$stub, $name)
     {
         $data = $this->getContentToBeReplaced($name);
 
