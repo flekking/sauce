@@ -15,7 +15,7 @@ class BlueprintMakeCommand extends GeneratorCommand
      * 
      * @var string
      */
-    protected $signature = 'sauce_make:macro_blueprint';
+    protected $name = 'sauce:make:macro_blueprint';
 
     /**
      * The console command description.
