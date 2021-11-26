@@ -3,7 +3,7 @@
 namespace {{ namespace }};
 
 use Fk\Sauce\Task\ManifestTask as Task;
-use {{ modelNamespace }}\{{ modelClass }};
+use {{ modelNamespace }}\{{ modelName }};
 
 class ManifestTask extends Task
 {
@@ -12,6 +12,6 @@ class ManifestTask extends Task
      */
     protected function model()
     {
-        return {{ modelClass }}::all();
+        return {{ modelName }}::all();
     }
 }

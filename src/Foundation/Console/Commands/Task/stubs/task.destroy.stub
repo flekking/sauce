@@ -3,7 +3,7 @@
 namespace {{ namespace }};
 
 use Fk\Sauce\Task\DestroyTask as Task;
-use {{ modelNamespace }}\{{ modelName }};
+use {{ modelNamespace }}\{{ modelClass }};
 
 class DestroyTask extends Task
 {
@@ -12,6 +12,6 @@ class DestroyTask extends Task
      */
     protected function model()
     {
-        return {{ modelName }}::class;
+        return {{ modelClass }}::class;
     }
 }

@@ -3,7 +3,7 @@
 namespace {{ namespace }};
 
 use Fk\Sauce\Task\Task;
-use {{ modelNamespace }}\{{ modelClass }};
+use {{ modelNamespace }}\{{ modelName }};
 
 class IndexTask extends Task
 {
@@ -13,7 +13,7 @@ class IndexTask extends Task
      */
     public function handle($request)
     {
-        return {{ modelClass }}::where(
+        return {{ modelName }}::where(
             $this->buildWhere()
                 ->with($request)
                 ->done()
