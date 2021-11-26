@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+use Fk\Sauce\Task\DestroyTask as Task;
+use {{ modelNamespace }}\{{ modelName }};
+
+class DestroyTask extends Task
+{
+    /**
+     * @return string
+     */
+    protected function model()
+    {
+        return {{ modelName }}::class;
+    }
+}

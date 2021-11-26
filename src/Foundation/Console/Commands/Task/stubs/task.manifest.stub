@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+use Fk\Sauce\Task\ManifestTask as Task;
+use {{ modelNamespace }}\{{ modelClass }};
+
+class ManifestTask extends Task
+{
+    /**
+     * @return string
+     */
+    protected function model()
+    {
+        return {{ modelClass }}::all();
+    }
+}

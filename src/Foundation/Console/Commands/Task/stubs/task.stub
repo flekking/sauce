@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }}
+
+use Fk\Sauce\Task\Task;
+
+class {{ class }} extends Task
+{
+    /**
+     * @param  \Illuminate\Http\Request  $request
+     * @return mixed
+     */
+    public function handle($request)
+    {
+        
+    }
+}

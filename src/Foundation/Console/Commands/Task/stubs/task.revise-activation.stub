@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+use Fk\Sauce\Task\ReviseActivationTask as Task;
+use {{ modelNamespace }}\{{ modelName }};
+
+class ReviseActivationTask extends Task
+{
+    /**
+     * @return string
+     */
+    protected function model()
+    {
+        return {{ modelName }}::class;
+    }
+}

@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+use Fk\Sauce\Task\ShowTask as Task;
+use {{ modelNamespace }}\{{ modelName }};
+
+class ShowTask extends Task
+{
+    /**
+     * @return string
+     */
+    protected function model()
+    {
+        return {{ modelName }}::class;
+    }
+}

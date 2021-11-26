@@ -1,0 +1,26 @@
+<?php
+
+namespace {{ namespace }};
+
+use Fk\Sauce\Task\Task;
+use {{ modelNamespace }}\{{ modelName }};
+
+class StoreTask extends Task
+{
+    /**
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public function handle($request)
+    {
+        ${{ modelVariable }} = new {{ modelName }};
+        $this->transaction(
+            function () use ($request, ${{ modelVariable }}) {
+                
+                ${{ modelVariable }}->save();
+            }
+        );
+
+        return ${{ modelVariable }};
+    }
+}
