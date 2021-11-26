@@ -30,7 +30,8 @@ trait ModelNameContent
      */
     protected function getModelNamespaceContent($name)
     {
-        return trim(implode('\\', array_slice(explode('\\', $name), 0, -2)), '\\');
+        $namespace = trim(implode('\\', array_slice(explode('\\', $name), 0, -2)), '\\');
+        return '\\App\\Models'.Str::replaceFirst($this->getDefaultNamespace($name), '', $namespace);
     }
 
     /**
