@@ -30,7 +30,7 @@ trait ModelNameContent
      */
     protected function getModelNamespaceContent($name)
     {
-        return trim(implode('\\', array_slice(explode('\\', $name), 0, -1)), '\\');
+        return trim(implode('\\', array_slice(explode('\\', $name), 0, -2)), '\\');
     }
 
     /**
@@ -39,7 +39,7 @@ trait ModelNameContent
      */
     protected function getModelNameContent($name)
     {
-        return implode('', array_slice(explode('\\', $name), -1, 1));
+        return implode('', array_slice(explode('\\', $name), -2, 1));
     }
 
     /**
