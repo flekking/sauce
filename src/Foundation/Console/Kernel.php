@@ -21,14 +21,14 @@ class Kernel extends ConsoleKernel
             \Fk\Sauce\Foundation\Console\Commands\Macro\RuleMakeCommand::class,
 
             // Task
-            \Fk\Sauce\Foundation\Task\TaskAmendMakeCommand::class,
-            \Fk\Sauce\Foundation\Task\TaskDestroyMakeCommand::class,
-            \Fk\Sauce\Foundation\Task\TaskIndexMakeCommand::class,
-            \Fk\Sauce\Foundation\Task\TaskMakeCommand::class,
-            \Fk\Sauce\Foundation\Task\TaskManifestMakeCommand::class,
-            \Fk\Sauce\Foundation\Task\TaskReviseActivationMakeCommand::class,
-            \Fk\Sauce\Foundation\Task\TaskShowMakeCommand::class,
-            \Fk\Sauce\Foundation\Task\TaskStoreMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Task\TaskAmendMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Task\TaskDestroyMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Task\TaskIndexMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Task\TaskMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Task\TaskManifestMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Task\TaskReviseActivationMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Task\TaskShowMakeCommand::class,
+            \Fk\Sauce\Foundation\Console\Commands\Task\TaskStoreMakeCommand::class,
         ];
     }
 }
