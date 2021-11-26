@@ -14,8 +14,8 @@ class FlagBlueprint implements Blueprint
     {
         $props = static::$props;
         return (
-            function () use ($props) {
-                return $this->boolean($props['fieldName']);
+            function ($nullable = false) use ($props) {
+                return $this->boolean($props['fieldName'])->nullable($nullable);
             }
         );
     }
