@@ -1,6 +1,6 @@
 <?php
 
-namespace Fk\Sauce\Foundation\Task\Traits;
+namespace Fk\Sauce\Foundation\Console\Commands\Task\Traits;
 
 use Illuminate\Support\Str;
 
