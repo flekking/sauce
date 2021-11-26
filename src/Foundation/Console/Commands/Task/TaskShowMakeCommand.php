@@ -3,7 +3,6 @@
 namespace Fk\Sauce\Foundation\Console\Commands\Task;
 
 use Fk\Sauce\Console\GeneratorCommand;
-use Fk\Sauce\Console\Traits\CleanNamespace;
 use Fk\Sauce\Foundation\Console\Commands\Task\Traits\ModelNameContent;
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 use Symfony\Component\Console\Input\InputOption;
@@ -11,7 +10,6 @@ use Symfony\Component\Console\Input\InputOption;
 class TaskShowMakeCommand extends GeneratorCommand
 {
     use CreatesMatchingTest;
-    use CleanNamespace;
     use ModelNameContent;
 
     /**
@@ -89,5 +87,15 @@ class TaskShowMakeCommand extends GeneratorCommand
         return [
             // ['all', 'a', InputOption::VALUE_NONE, 'Generate a migration, seeder, factory, policy, and resource controller for the model'],
         ];
+    }
+
+    /**
+     * Get the desired class name from the input.
+     *
+     * @return string
+     */
+    protected function getNameInput()
+    {
+        return trim($this->argument('name')).'\\ShowTask';
     }
 }
