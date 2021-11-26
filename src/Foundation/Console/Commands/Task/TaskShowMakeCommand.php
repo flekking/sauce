@@ -3,7 +3,7 @@
 namespace Fk\Sauce\Foundation\Console\Commands\Task;
 
 use Fk\Sauce\Console\GeneratorCommand;
-use FK\Sauce\Console\Traits\CleanNamespace;
+use Fk\Sauce\Console\Traits\CleanNamespace;
 use Fk\Sauce\Foundation\Console\Commands\Task\Traits\ModelNameContent;
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 use Symfony\Component\Console\Input\InputOption;
