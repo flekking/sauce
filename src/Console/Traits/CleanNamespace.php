@@ -12,6 +12,6 @@ trait CleanNamespace
      */
     protected function getNamespace($name)
     {
-        return trim(implode('\\', explode('\\', $name), '\\'));
+        return trim(implode('\\', explode('\\', $name)), '\\');
     }
 }
