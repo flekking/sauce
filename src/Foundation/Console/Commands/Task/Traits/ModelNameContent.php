@@ -17,9 +17,9 @@ trait ModelNameContent
             :   [];
 
         return [
-            'modelNamespace' => $this->getModelNamespaceContent(),
-            'modelName' => $this->getModelNameContent(),
-            'modelVariable' => $this->getModelVariableContent(),
+            'modelNamespace' => $this->getModelNamespaceContent($name),
+            'modelName' => $this->getModelNameContent($name),
+            'modelVariable' => $this->getModelVariableContent($name),
             ...$additionalContents
         ];
     }
