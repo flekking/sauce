@@ -48,6 +48,6 @@ trait ModelNameContent
      */
     protected function getModelVariableContent($name)
     {
-        return Str::camel($this->getModelNameContent());
+        return Str::camel($this->getModelNameContent($name));
     }
 }
